@@ -3,104 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fundamentos de JavaScript - Ejercicios</title>
+  <title>escomz.github.io — Proyectos y Código</title>
+  <!-- Redirección automática a visor.html -->
+  <meta http-equiv="refresh" content="0; url=visor.html">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    :root {
+      --primary: #1d3557;
+      --accent: #2cd326;
+      --bg: #f4f5f8;
+      --card: #ffffff;
     }
-
     body {
-      background-color: #0f172a;
-      color: #f8fafc;
-      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      margin: 0;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2.5rem 1rem;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
-
-    header h1 {
-      font-size: 2.25rem;
-      color: #facc15;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      color: #94a3b8;
-      font-size: 1.1rem;
-    }
-
-    .grid-container {
-      width: 100%;
-      max-width: 900px;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 1rem;
-    }
-
-    .card {
-      background-color: #1e293b;
-      border: 1px solid #334155;
-      border-radius: 10px;
-      padding: 1.25rem;
-      text-align: center;
-      text-decoration: none;
-      color: #e2e8f0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      gap: 0.5rem;
-      transition: all 0.2s ease-in-out;
+      align-items: center;
+      min-height: 100vh;
+      color: #222;
     }
-
-    .card:hover {
-      background-color: #334155;
-      border-color: #facc15;
-      transform: translateY(-3px);
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    .card {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 2.5rem;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      text-align: center;
     }
-
-    .card .badge {
-      font-size: 0.75rem;
+    h1 { margin-top: 0; color: var(--primary); font-size: 1.5rem; }
+    p { color: #666; margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .links { display: flex; flex-direction: column; gap: 0.75rem; }
+    .btn {
+      display: block;
+      padding: 0.75rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
       font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #facc15;
+      font-size: 0.95rem;
+      transition: all 0.2s;
     }
-
-    .card .title {
-      font-size: 1.1rem;
-      font-weight: 700;
-    }
+    .btn-primary { background: #1d3557; color: #fff; }
+    .btn-primary:hover { background: #457b9d; }
+    .btn-accent { background: var(--accent); color: #14213d; }
+    .btn-accent:hover { background: #24af1f; color: #fff; }
+    .btn-outline { border: 1px solid #ccc; color: #333; }
+    .btn-outline:hover { background: #e9ecef; }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Fundamentos de JavaScript</h1>
-    <p>Índice de ejercicios prácticos (1 al 21)</p>
-  </header>
-
-  <main class="grid-container">
-    <a class="card" href="fundamentos-js/ejercicio1/index.html">
-      <span class="badge">JS</span>
-      <span class="title">Ejercicio 1</span>
-    </a>
-    <a class="card" href="fundamentos-js/ejercicio2/index.html">
-      <span class="badge">JS</span>
-      <span class="title">Ejercicio 2</span>
-    </a>
-    <a class="card" href="fundamentos-js/ejercicio3/index.html">
-      <span class="badge">JS</span>
-      <span class="title">Ejercicio 3</span>
-    </a>
-    <a class="card" href="fundamentos-js/ejercicio4
+  <div class="card">
+    <h1>🚀 escomz.github.io</h1>
+    <p>Redirigiendo al visor de proyectos y código...</p>
+    <div class="links">
+      <a href="visor.html" class="btn btn-accent">💻 Abrir Visor de Código &amp; Proyectos</a>
+      <a href="proyecto1/" class="btn btn-primary">▶ Ver Proyecto 1 (Hola Mundo TS)</a>
+      <a href="guia.html" class="btn btn-outline">📖 Ver Guía de Configuración</a>
+    </div>
+  </div>
+</body>
+</html>

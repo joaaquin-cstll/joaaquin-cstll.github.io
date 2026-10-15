@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos de JavaScript - Ejercicios</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background-color: #0f172a;
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    header h1 {
+      font-size: 2.25rem;
+      color: #facc15;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+
+    .grid-container {
+      width: 100%;
+      max-width: 900px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 1.25rem;
+      text-align: center;
+      text-decoration: none;
+      color: #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      background-color: #334155;
+      border-color: #facc15;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    }
+
+    .card .badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #facc15;
+    }
+
+    .card .title {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fundamentos de JavaScript</h1>
+    <p>Índice de ejercicios prácticos (1 al 21)</p>
+  </header>
+
+  <main class="grid-container">
+    <a class="card" href="fundamentos-js/ejercicio1/index.html">
+      <span class="badge">JS</span>
+      <span class="title">Ejercicio 1</span>
+    </a>
+    <a class="card" href="fundamentos-js/ejercicio2/index.html">
+      <span class="badge">JS</span>
+      <span class="title">Ejercicio 2</span>
+    </a>
+    <a class="card" href="fundamentos-js/ejercicio3/index.html">
+      <span class="badge">JS</span>
+      <span class="title">Ejercicio 3</span>
+    </a>
+    <a class="card" href="fundamentos-js/ejercicio4
