@@ -1,15 +1,16 @@
-// Array de 100 números del 1 al 200
-const numeros = Array.from({ length: 100 }, () => Math.floor(Math.random() * 200) + 1);
+const salida = document.getElementById("resultado");
 
-// 2. Mostrar array
-console.log("--- Array completo ---");
+const numeros = [];
+for (let i = 0; i < 100; i++) {
+  numeros.push(Math.floor(Math.random() * 101));
+}
 console.table(numeros);
+salida.textContent = "Array: " + numeros.join(", ");
 
-// 3. Filtrar por números del 50 al 150
-const minimo = 50;
-const maximo = 150;
-const numerosFiltrados = numeros.filter(num => num >= minimo && num <= maximo);
-
-// 4. Mostrar número filtrados
-console.log(`--- Números filtrados en el rango [${minimo} - ${maximo}] (${numerosFiltrados.length} encontrados) ---`);
-console.table(numerosFiltrados);
+document.getElementById("boton").addEventListener("click", function () {
+  const min = Number(document.getElementById("min").value);
+  const max = Number(document.getElementById("max").value);
+  const filtrados = numeros.filter(n => n >= min && n <= max);
+  console.table(filtrados);
+  salida.textContent = "Array: " + numeros.join(", ") + "\n\nEntre " + min + " y " + max + ": " + filtrados.join(", ");
+});
